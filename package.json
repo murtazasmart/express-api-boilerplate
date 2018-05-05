@@ -1,0 +1,41 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "A simple boiler template for backend server API using typescript, express, tslint, mongodb and inversify",
+  "main": "./dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/server.js",
+    "start:watch": "nodemon",
+    "build": "npm run build-ts",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json "
+  },
+  "author": "Murtaza Anverali",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/dotenv": "^4.0.2",
+    "@types/express": "^4.11.0",
+    "@types/jsonwebtoken": "^7.2.5",
+    "@types/mongoose": "^4.7.29",
+    "@types/winston": "^2.3.7",
+    "nodemon": "^1.14.1",
+    "nyc": "^11.2.1",
+    "source-map-support": "^0.5.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "inversify": "^4.5.1",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^4.12.3",
+    "reflect-metadata": "^0.1.10",
+    "winston": "^2.4.0"
+  }
+}
